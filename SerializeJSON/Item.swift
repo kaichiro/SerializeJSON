@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class Item: NSObject {
+class Item: NSObject
+{
     var classification: Int
     var image: String
     var itemName: String

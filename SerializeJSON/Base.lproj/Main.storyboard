@@ -13,12 +13,12 @@
         <scene sceneID="i4x-62-jgO">
             <objects>
                 <tableViewController id="EXk-S7-enI" customClass="ViewController" customModule="SerializeJSON" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KLe-Eg-UFw">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="vrTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KLe-Eg-UFw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="123" id="JdC-Ni-A9o" customClass="StarCell" customModule="SerializeJSON" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellID" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="123" id="JdC-Ni-A9o" customClass="StarCell" customModule="SerializeJSON" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="123"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JdC-Ni-A9o" id="E8F-ie-hqq">
@@ -29,11 +29,11 @@
                                             <rect key="frame" x="16" y="11" width="75" height="63"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarOff" highlightedImage="StarOff" translatesAutoresizingMaskIntoConstraints="NO" id="4nn-rp-5Xt" userLabel="star1">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarOff" highlightedImage="StarOn" translatesAutoresizingMaskIntoConstraints="NO" id="4nn-rp-5Xt" userLabel="star1">
                                             <rect key="frame" x="149" y="32" width="28" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarOff" highlightedImage="StarOff" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-mY-fJe" userLabel="star2">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarOff" highlightedImage="StarOn" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-mY-fJe" userLabel="star2">
                                             <rect key="frame" x="185" y="32" width="28" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -44,7 +44,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarOff" highlightedImage="StarOff" translatesAutoresizingMaskIntoConstraints="NO" id="n6c-LY-vQ4" userLabel="star3">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarOff" highlightedImage="StarOn" translatesAutoresizingMaskIntoConstraints="NO" id="n6c-LY-vQ4" userLabel="star3">
                                             <rect key="frame" x="221" y="32" width="28" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -64,6 +64,9 @@
                             <outlet property="delegate" destination="EXk-S7-enI" id="LT0-r2-cCP"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="vrTableView" destination="KLe-Eg-UFw" id="Z0x-BH-2tH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZG-ZZ-coK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

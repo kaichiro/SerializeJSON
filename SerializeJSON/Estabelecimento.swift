@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class Estabelecimento: NSObject
 {
     var companyName: String

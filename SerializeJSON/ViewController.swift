@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController
+{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func parseJson()
+    {
+        Alamofire.request("http://silvanomalfattiml.000webhostapp.com/cardapio.json").responseJSON
+            {
+                response in
+                if let json =
+                response.result.value as? [String:Any]
+                {
+                    if let nome = json["company_name"] as? String,
+                        let address = json["address"] as? String,
+                        let longitude = json["longitude"] as? NSString,
+                        let latitude = json["latitude"] as? NSString,
+                        let itens = json["itens"] as? [[String: Any]]
+                }
+        }
+    }
 
 }
 

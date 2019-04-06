@@ -12,6 +12,8 @@
 		572F4E412258281E000E4FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572F4E3F2258281E000E4FE2 /* Main.storyboard */; };
 		572F4E432258281E000E4FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572F4E422258281E000E4FE2 /* Assets.xcassets */; };
 		572F4E462258281E000E4FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572F4E442258281E000E4FE2 /* LaunchScreen.storyboard */; };
+		572F4E4E2258288B000E4FE2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F4E4D2258288B000E4FE2 /* Item.swift */; };
+		572F4E5022582931000E4FE2 /* Estabelecimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F4E4F22582931000E4FE2 /* Estabelecimento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		572F4E422258281E000E4FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572F4E452258281E000E4FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572F4E472258281E000E4FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572F4E4D2258288B000E4FE2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		572F4E4F22582931000E4FE2 /* Estabelecimento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estabelecimento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				572F4E422258281E000E4FE2 /* Assets.xcassets */,
 				572F4E442258281E000E4FE2 /* LaunchScreen.storyboard */,
 				572F4E472258281E000E4FE2 /* Info.plist */,
+				572F4E4D2258288B000E4FE2 /* Item.swift */,
+				572F4E4F22582931000E4FE2 /* Estabelecimento.swift */,
 			);
 			path = SerializeJSON;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572F4E5022582931000E4FE2 /* Estabelecimento.swift in Sources */,
 				572F4E3E2258281E000E4FE2 /* ViewController.swift in Sources */,
+				572F4E4E2258288B000E4FE2 /* Item.swift in Sources */,
 				572F4E3C2258281E000E4FE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
